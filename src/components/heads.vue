@@ -3,12 +3,12 @@
     <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">LD火星</a>
+    <div class="navbar-header col-md-2 logo">
+      <a class="navbar-brand" href="#"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right">
+      <form class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
@@ -58,5 +58,8 @@ li {
 
 a {
   color: #42b983;
+}
+.logo{
+background: url(../assets/logo3.png) no-repeat center center;
 }
 </style>

@@ -8,6 +8,7 @@ import UI from '../page/UI'
 
 Vue.use(Router)
 
+
 export default new Router({
   routes: [
     {
