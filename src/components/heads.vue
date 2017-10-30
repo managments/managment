@@ -15,6 +15,13 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">通过input改变author</a></li>
+        <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" v-model="inputTxt" class="form-control" placeholder="通过input改变author">
+        </div>
+        <button type="button" class="btn btn-default" @click="setAuthor">Submit</button>
+      </form>
         <li><a href="#">火星黑洞</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">头像<span class="caret"></span></a>
@@ -35,7 +42,15 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      inputTxt:""
+    }
+  },
+  methods:{
+    setAuthor: function () {
+      console.log(this.$store.state.author)
+    // 　　　this.$store.state.author = this.inputTxt
+       this.$store.commit("newAuthor",this.inputTxt)
     }
   }
 }

@@ -11,17 +11,18 @@
             </div>
           </div>
         </div>
-
+        <Foot1></Foot1>
   </div>
 </template>
 
 <script>
 import Heads from './components/heads'
 import Silde from './components/silde'
+import Foot1 from './components/foot1'
 export default {
   name: 'app',
   components:{
-    Heads,Silde
+    Heads,Silde,Foot1
   }
 }
 </script>
