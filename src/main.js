@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import VueRouter from 'vue-router'
 import router from './router/router'
 import $ from 'jquery'
 import './assets/css/bootstrap.min.css'
@@ -153,8 +154,6 @@ Vue.use(VueHtml5Editor, {
 })
 
 Vue.config.productionTip = false
-
-
 // login里的钩子函数
 Vue.directive('demo', function (el, binding) {
   console.log(binding.value.color) // => "white"

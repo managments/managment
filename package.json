@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "echarts": "^3.7.2",
+    "font-awesome-webpack": "^0.0.5-beta.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.0"
