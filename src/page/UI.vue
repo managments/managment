@@ -1,6 +1,6 @@
 <template>
   <div id="UI">
-UI
+
   </div>
 </template>
 
@@ -11,6 +11,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

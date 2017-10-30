@@ -6,7 +6,12 @@ import router from './router/router'
 import $ from 'jquery'
 import './assets/css/bootstrap.min.css'
 import './assets/js/bootstrap.min'
+import store from './store/store'
 
+
+// 全局引入echarts
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
 
 require('font-awesome-webpack')
 import VueHtml5Editor from 'vue-html5-editor'
@@ -149,10 +154,35 @@ Vue.use(VueHtml5Editor, {
 
 Vue.config.productionTip = false
 
+
+// login里的钩子函数
+Vue.directive('demo', function (el, binding) {
+  console.log(binding.value.color) // => "white"
+  console.log(binding.value.text)  // => "hello!"
+})
+
+//render函数
+Vue.component('anchored-heading', {
+  render: function (createElement) {
+    return createElement(
+      'h' + this.level,   // tag name 标签名称
+      this.$slots.default // 子组件中的阵列
+    )
+  },
+  props: {
+    level: {
+      type: Number,
+      required: true
+    }
+  }
+})
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
