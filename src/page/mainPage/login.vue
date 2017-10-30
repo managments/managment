@@ -8,6 +8,7 @@
 </qui_button>
 <qui_button v-on:btnClickEvent="doSth2" msg="登入"></qui_button>
 <!-- 自定义指令 -->
+不在顶部因为使用了自定义指令
 <input v-focus>
 <!-- 钩子函数 -->
 <div v-demo="{ color: 'white', text: 'hello!' }"></div>

@@ -23,9 +23,13 @@ export default new Router({
 // 主界面
 { path:'/mainPage',component:mainPage,children:[
   {
-    path: '/Login',
+    path: '/',
     name: 'Login',
     component: Login
+}, {
+  path: '/Login',
+  name: 'Login',
+  component: Login
 },
   {
     path: '/Chart',

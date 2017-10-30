@@ -13,6 +13,7 @@ require ('./mock.js')
 
 import axios from 'axios'
 Vue.prototype.$http = axios
+
 // 全局引入echarts
 import echarts from 'echarts'
 Vue.prototype.$echarts = echarts

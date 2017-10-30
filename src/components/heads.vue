@@ -26,7 +26,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">头像<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#/Login1">退出</a></li>
+            <li><a href="#/">退出</a></li>
           </ul>
         </li>
       </ul>
