@@ -3,11 +3,15 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
-
-
 const store = new Vuex.Store({
-  mutations :{},
-  actions : {},
-  state : {}
+  state : {
+    author: 'Wise Wrong'
+  },
+  mutations :{
+    newAuthor(state,msg){
+      state.author=msg;
+    }
+  },
+  actions : {}
 })
 export default store

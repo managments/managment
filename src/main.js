@@ -8,8 +8,11 @@ import $ from 'jquery'
 import './assets/css/bootstrap.min.css'
 import './assets/js/bootstrap.min'
 import store from './store/store'
+//此部分引入的是我们所编写的mockjs文档
+require ('./mock.js')
 
-
+import axios from 'axios'
+Vue.prototype.$http = axios
 // 全局引入echarts
 import echarts from 'echarts'
 Vue.prototype.$echarts = echarts
