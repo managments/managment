@@ -3,7 +3,7 @@
     111
  <Heads></Heads>
         <div class="container-fluid">
-          <div class="row" style="padding-top:52px">
+          <div class="row" style="padding-top:52px;padding-bottom:70px">
             <div class="col-md-2" style="padding:0">
               <Silde></Silde>
             </div>
