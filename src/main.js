@@ -20,8 +20,8 @@ Vue.use(VueScroller)
 // 引入懒加载
 import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload, {
-  error: 'dist/error.png',//这个是请求失败后显示的图片
-  loading: 'dist/loading.gif',//这个是加载的loading过渡效果
+  error: '../static/error.jpg',//这个是请求失败后显示的图片
+  loading: '../static/loading.gif',//这个是加载的loading过渡效果
   try: 2 // 这个是加载图片数量
 })
 
