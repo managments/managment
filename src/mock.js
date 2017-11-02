@@ -22,8 +22,8 @@ for (let i = 0; i < 100; i++) {
 }
 const data2=Mock.mock(articles)
 
-console.log(JSON.stringify(data, null, 4));
-const data1=JSON.stringify(data, null, 4)
+// console.log(JSON.stringify(data, null, 4));
+// const data1=JSON.stringify(data, null, 4)
 //使用mockjs模拟数据
 
 Mock.mock('/api/data', (req, res) => {

@@ -8,6 +8,11 @@
 # install dependencies
 npm install
 
+
+# install for html5-editor
+npm install font-awesome-webpack less less-loader css-loader style-loader file-loader font-awesome
+
+
 # serve with hot reload at localhost:8080
 npm run dev
 
