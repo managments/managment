@@ -11,6 +11,20 @@ import store from './store/store'
 //此部分引入的是我们所编写的mockjs文档
 require ('./mock.js')
 
+
+// 引入上拉刷新下来加载
+import VueScroller from 'vue-scroller'
+Vue.use(VueScroller)
+
+
+// 引入懒加载
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload, {
+  error: 'dist/error.png',//这个是请求失败后显示的图片
+  loading: 'dist/loading.gif',//这个是加载的loading过渡效果
+  try: 2 // 这个是加载图片数量
+})
+
 //引入ue编辑器
 import '../static/UE/ueditor.config.js'
 import '../static/UE/ueditor.all.min.js'

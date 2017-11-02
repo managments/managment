@@ -1,7 +1,7 @@
 <template>
   <div class="mock">
       <ul>
-        <li v-for="(item,key) in data">
+        <li class="row" v-for="(item,key) in data">
             <div class="col-md-8">
               <div class="name">{{item.author_name}}</div>
               <div class="time">{{item.date}}</div>
@@ -28,6 +28,9 @@
         this.data=res.data.data;
         console.log(this.data)
       })
+    },
+    methods:{
+
     }
   })
 </script>
@@ -35,6 +38,7 @@
 <style scoped>
 li{
   list-style: none;
+
 }
 </style>
 

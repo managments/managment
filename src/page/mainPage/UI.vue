@@ -1,8 +1,13 @@
 <template>
   <div id="UI">
+    <!-- 分页器 -->
     <Pagination :total="total" :current-page='current' @pagechange="pagechange"></Pagination>
+    <!-- NextTick函数 -->
     <NextTick></NextTick>
-    <Mock></Mock>
+    <!-- 数据模拟 -->
+    <!-- <Mock></Mock> -->
+    <!-- 懒加载 -->
+    <LazyLoad></LazyLoad>
   </div>
 </template>
 
@@ -10,6 +15,7 @@
 import Mock from '../../components/mock'
 import NextTick from '../../components/nextTick'
 import Pagination  from '../../components/pagination'
+import LazyLoad  from '../../components/lazyload'
 export default {
   name: 'UI',
   data(){
@@ -30,11 +36,13 @@ export default {
      }
   },
   components:{
-    Mock,NextTick,Pagination
+    Mock,NextTick,Pagination,LazyLoad
   }
 }
 </script>
 
 <style scoped>
-
+li{
+  list-style: none
+}
 </style>
