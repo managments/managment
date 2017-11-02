@@ -25,6 +25,11 @@ Vue.use(VueLazyload, {
   try: 2 // 这个是加载图片数量
 })
 
+// 引入swiper轮播图
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// 注册
+Vue.use(VueAwesomeSwiper)
+
 //引入ue编辑器
 import '../static/UE/ueditor.config.js'
 import '../static/UE/ueditor.all.min.js'

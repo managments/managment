@@ -6,6 +6,8 @@
     <NextTick></NextTick>
     <!-- 数据模拟 -->
     <!-- <Mock></Mock> -->
+    <!-- 轮播图 -->
+    <Swiper1></Swiper1>
     <!-- 懒加载 -->
     <LazyLoad></LazyLoad>
   </div>
@@ -16,6 +18,7 @@ import Mock from '../../components/mock'
 import NextTick from '../../components/nextTick'
 import Pagination  from '../../components/pagination'
 import LazyLoad  from '../../components/lazyload'
+import Swiper1  from '../../components/swiper'
 export default {
   name: 'UI',
   data(){
@@ -36,7 +39,7 @@ export default {
      }
   },
   components:{
-    Mock,NextTick,Pagination,LazyLoad
+    Mock,NextTick,Pagination,LazyLoad,Swiper1
   }
 }
 </script>
