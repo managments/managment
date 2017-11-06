@@ -9,6 +9,7 @@
   </div>
 </template>
 <script>
+import { mapGetters} from 'vuex'  
 export default {
   name: "foot1",
   data() {
@@ -23,9 +24,11 @@ export default {
     };
   },
   computed: {
-    author() {
-      return this.$store.state.author;
-    }
+    // author() {
+      // return this.$store.state.author;
+
+    // },
+    ...mapGetters(['author'])
   }
 };
 </script>

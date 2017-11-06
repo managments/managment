@@ -19,7 +19,8 @@
     mounted:function(){
       this.$http.get('/api/data').then(res=>{
         this.arr=res.data.data;
-        console.log(this.data)
+        console.log(this.data);
+
       })
     },
   })

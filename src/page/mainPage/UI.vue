@@ -1,5 +1,7 @@
 <template>
   <div id="UI">
+    <input type="text">
+
     <!-- 分页器 -->
     <Pagination :total="total" :current-page='current' @pagechange="pagechange"></Pagination>
     <!-- NextTick函数 -->

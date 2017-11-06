@@ -50,7 +50,8 @@ export default {
     setAuthor: function () {
       console.log(this.$store.state.author)
     // 　　　this.$store.state.author = this.inputTxt
-       this.$store.commit("newAuthor",this.inputTxt)
+      //  this.$store.commit("newAuthor",this.inputTxt)
+      this.$store.dispatch("newAuthor", this.inputTxt);
     }
   }
 }
